@@ -1,7 +1,4 @@
----
-title: myDevice
-description: Get device information.
----
+
 <!--
 # license: Licensed to the Apache Software Foundation (ASF) under one
 #         or more contributor license agreements.  See the NOTICE file
@@ -21,12 +18,18 @@ description: Get device information.
 #         under the License.
 -->
 
-# cordova-plugin-device
+# cordova-plugin
 
 This plugin defines a global `device` object, which describes the device's hardware and software.
 Although the object is in the global scope, it is not available until after the `deviceready` event.
 
 Straight copy from apache cordova sample - used to extend
+
+```js
+plugman install --platform android --project . --plugin cordova-plugin
+
+plugman uninstall --platform android --project .--plugin cordova-plugin
+```
 
 ```js
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -63,7 +66,6 @@ different across versions of the same product.
 ### Quick Example
 
 ```js
-// Android:    Nexus One       returns "Passion" (Nexus One code name)
 var model = mydevice.model;
 ```
 
@@ -82,11 +84,10 @@ var string = mydevice.platform;
 ### Quick Example
 
 ```js
-//   - "Android"
 var devicePlatform = mydevice.platform;
 ```
 
-## device.uuid
+## mydevice.uuid
 
 Get the device's Universally Unique Identifier ([UUID](http://en.wikipedia.org/wiki/Universally_Unique_Identifier)).
 
@@ -102,8 +103,6 @@ The details of how a UUID is generated are determined by the device manufacturer
 ### Quick Example
 
 ```js
-// Android: Returns a random 64-bit integer (as a string, again!)
-//          The integer is generated on the device's first boot
 var deviceID = mydevice.uuid;
 ```
 
@@ -111,7 +110,7 @@ var deviceID = mydevice.uuid;
 
 Get the operating system version.
 
-    var string = device.version;
+    var string = mydevice.version;
 
 
 ### Quick Example
@@ -130,7 +129,6 @@ Get the device's manufacturer.
 ### Quick Example
 
 ```js
-// Android:    Motorola XT1032 would return "motorola"
 var deviceManufacturer = mydevice.manufacturer;
 ```
 
