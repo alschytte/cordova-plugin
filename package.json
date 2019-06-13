@@ -4,7 +4,7 @@
   "description": "Modified Cordova Device Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "cordova-myplugin",
+    "id": "@alschytte/cordova-myplugin",
     "platforms": [
       "android"
     ]

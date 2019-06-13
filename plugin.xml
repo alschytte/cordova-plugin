@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-myplugin" version="0.0.1">
+<plugin id="@alschytte/cordova-mydevice" version="0.0.1">
     <name>Device</name>
     <description>Cordova Device Plugin</description>
     <license>MIT</license>

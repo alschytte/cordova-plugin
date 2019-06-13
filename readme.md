@@ -26,9 +26,9 @@ Although the object is in the global scope, it is not available until after the 
 Straight copy from apache cordova sample - used to extend
 
 ```js
-plugman install --platform android --project . --plugin cordova-plugin
+plugman install --platform android --project . --plugin @alschytte/cordova-mydevice
 
-plugman uninstall --platform android --project .--plugin cordova-plugin
+plugman uninstall --platform android --project .--plugin @alschytte/cordova-mydevice
 ```
 
 ```js
@@ -40,7 +40,7 @@ function onDeviceReady() {
 
 ## Installation
 
-    cordova plugin add cordova-plugin
+    cordova plugin add @alschytte/cordova-mydevice
 
 ## Properties
 
