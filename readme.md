@@ -26,73 +26,73 @@ Although the object is in the global scope, it is not available until after the 
 Straight copy from apache cordova sample - used to extend
 
 ```js
-plugman install --platform android --project . --plugin @alschytte/cordova-mydevice
+plugman install --platform android --project . --plugin @alschytte/cordova-device
 
-plugman uninstall --platform android --project .--plugin @alschytte/cordova-mydevice
+plugman uninstall --platform android --project .--plugin @alschytte/cordova-device
 ```
 
 ```js
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    console.log(mydevice.cordova);
+    console.log(device.cordova);
 }
 ```
 
 ## Installation
 
-    cordova plugin add @alschytte/cordova-mydevice
+    cordova plugin add @alschytte/cordova-device
 
 ## Properties
 
-- mydevice.cordova
-- mydevice.model
-- mydevice.platform
-- mydevice.uuid
-- mydevice.version
-- mydevice.manufacturer
-- mydevice.isVirtual
-- mydevice.serial
+- device.cordova
+- device.model
+- device.platform
+- device.uuid
+- device.version
+- device.manufacturer
+- device.isVirtual
+- device.serial
 
-## mydevice.cordova
+## device.cordova
 
 Get the version of Cordova running on the device.
 
-## mydevice.model
+## device.model
 
-The `mydevice.model` returns the name of the device's model or
+The `device.model` returns the name of the device's model or
 product. The value is set by the device manufacturer and may be
 different across versions of the same product.
 
 ### Quick Example
 
 ```js
-var model = mydevice.model;
+var model = device.model;
 ```
 
 ### Quirks
 
 - Gets the [product name](http://developer.android.com/reference/android/os/Build.html#PRODUCT) instead of the [model name](http://developer.android.com/reference/android/os/Build.html#MODEL), which is often the production code name. For example, the Nexus One returns `Passion`, and Motorola Droid returns `voles`.
 
-## mydevice.platform
+## device.platform
 
 Get the device's operating system name.
 
 ```js
-var string = mydevice.platform;
+var string = device.platform;
 ```
 
 ### Quick Example
 
 ```js
-var devicePlatform = mydevice.platform;
+var devicePlatform = device.platform;
 ```
 
-## mydevice.uuid
+## device.uuid
 
 Get the device's Universally Unique Identifier ([UUID](http://en.wikipedia.org/wiki/Universally_Unique_Identifier)).
 
 ```js
-var string = mydevice.uuid;
+var string = device.uuid;
 ```
 
 ### Description
@@ -103,47 +103,47 @@ The details of how a UUID is generated are determined by the device manufacturer
 ### Quick Example
 
 ```js
-var deviceID = mydevice.uuid;
+var deviceID = device.uuid;
 ```
 
-## mydevice.version
+## device.version
 
 Get the operating system version.
 
-    var string = mydevice.version;
+    var string = device.version;
 
 
 ### Quick Example
 
 ```js
-var deviceVersion = mydevice.version;
+var deviceVersion = device.version;
 ```
 
-## mydevice.manufacturer
+## device.manufacturer
 
 Get the device's manufacturer.
 
-    var string = mydevice.manufacturer;
+    var string = device.manufacturer;
 
 
 ### Quick Example
 
 ```js
-var deviceManufacturer = mydevice.manufacturer;
+var deviceManufacturer = device.manufacturer;
 ```
 
-## mydevice.isVirtual
+## device.isVirtual
 
 whether the device is running on a simulator.
 
 ```js
-var isSim = mydevice.isVirtual;
+var isSim = device.isVirtual;
 ```
 
-## mydevice.serial
+## device.serial
 
 Get the device hardware serial number ([SERIAL](http://developer.android.com/reference/android/os/Build.html#SERIAL)).
 
 ```js
-var string = mydevice.serial;
+var string = device.serial;
 ```
