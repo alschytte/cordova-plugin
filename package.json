@@ -1,10 +1,10 @@
 {
-  "name": "cordova-myplugin",
+  "name": "@alschytte/cordova-mydevice",
   "version": "1.0.0",
   "description": "Modified Cordova Device Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "@alschytte/cordova-myplugin",
+    "id": "@alschytte/cordova-mydevice",
     "platforms": [
       "android"
     ]
