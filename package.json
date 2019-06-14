@@ -13,11 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/ascsi/cordova-plugin.git"
   },
-  "keywords": [
-    "cordova",
-    "device",
-    "cordova-android"
-  ],
   "scripts": {
     "test": ""
   },
